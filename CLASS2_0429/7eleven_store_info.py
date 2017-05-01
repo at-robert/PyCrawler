@@ -12,9 +12,10 @@ f_data = {
 data = requests.post(api_url, data=f_data)
 xml = BeautifulSoup(data.content, 'lxml')
 
-tags = ['POIName', 'POIID', 'Address', 'X', 'Y',
-        'isDining', 'isATM', 'isIbon', 'isLavatory',
-        'isCityCafe']
+tags = ['poiname', 'poiid', 'address', 'x', 'y',
+        'isdining', 'isatm', 'isibon', 'islavatory',
+        'iscitycafe']
+
 xml_data = xml.find_all(tags)
 stores = list()
 
@@ -35,3 +36,5 @@ while 0 < len(xml_data):
     }
     stores.append(d)
     del xml_data[:len(tags)]
+
+print(stores)
