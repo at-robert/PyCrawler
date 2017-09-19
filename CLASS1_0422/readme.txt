@@ -23,10 +23,10 @@ NOTE:
 brew install libxslt
 brew install libxml2
 
-pip3 install requests
-pip3 install bs4
-pip3 install html5lib
-pip3 install lxml
+pip install requests
+pip install bs4
+pip install html5lib
+pip install lxml
 
 Python ‘lamda’ 使用說明：
 http://falldog7.blogspot.tw/2009/07/python-lambda.html

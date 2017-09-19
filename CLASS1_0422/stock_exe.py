@@ -10,7 +10,7 @@ import numpy as np
 # url = 'https://www.ptt.cc/bbs/Beauty/index.html'
 
 # Defining the stock we want to get by its ID
-stock_id = 2303
+stock_id = 2412
 
 # Defining the url that we're about to call
 url = 'https://tw.stock.yahoo.com/d/s/major_{stock_id}.html'.format(stock_id=stock_id)
